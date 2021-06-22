@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorVeryLight"
+    tools:context=".MainActivity"
+    android:screenOrientation="portrait">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/loginscreen"
+        android:scaleType="fitXY"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:padding="30dp"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:id="@+id/create_account_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:text="Create New Account"
+                    android:fontFamily="@font/lato_italic"
+                    android:textSize="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:textStyle="italic"
+                    android:textColor="#000000"
+                    android:id="@+id/create_new_account_heading"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:layout_below="@id/create_new_account_heading"
+                    android:id="@+id/email_text"
+                    android:fontFamily="@font/lato_italic"
+                    android:textSize="20dp"/>
+
+                <EditText
+                    android:id="@+id/user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/email_text"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:fontFamily="@font/lato_italic"
+                    android:background="@drawable/input_fields"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name"
+                    android:id="@+id/fullName_text"
+                    android:fontFamily="@font/lato_italic"
+                    android:textSize="20dp"
+                    android:layout_below="@id/user_email"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/fullName_text"
+                    android:layout_height="50dp"
+                    android:id="@+id/user_name"
+                    android:hint="Full name"
+                    android:fontFamily="@font/lato_italic"
+                    android:background="@drawable/input_fields" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:id="@+id/phone_text"
+                    android:fontFamily="@font/lato_italic"
+                    android:textSize="20dp"
+                    android:layout_below="@id/user_name"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/user_phone"
+                    android:inputType="number"
+                    android:layout_below="@id/phone_text"
+                    android:hint="Phone"
+                    android:fontFamily="@font/lato_italic"
+                    android:background="@drawable/input_fields"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:id="@+id/password_text"
+                    android:fontFamily="@font/lato_italic"
+                    android:textSize="20dp"
+                    android:layout_below="@id/user_phone"
+                    android:layout_marginTop="10dp"/>
+
+
+                <EditText
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/user_password"
+                    android:inputType="textPassword"
+                    android:layout_below="@id/password_text"
+                    android:hint="Password"
+                    android:fontFamily="@font/lato_italic"
+                    android:background="@drawable/input_fields"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Country"
+                    android:id="@+id/country_text"
+                    android:fontFamily="@font/lato_italic"
+                    android:textSize="20dp"
+                    android:layout_below="@id/user_password"
+                    android:layout_marginTop="10dp"/>
+
+
+                <EditText
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/user_country"
+                    android:inputType="text"
+                    android:layout_below="@id/country_text"
+                    android:hint="Country"
+                    android:fontFamily="@font/lato_italic"
+                    android:background="@drawable/input_fields"/>
+
+                <Button
+                    android:id="@+id/register_btn"
+                    android:layout_width="1in"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_country"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000000"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Register"
+                    android:background="@drawable/rounded_corners"
+                    />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:paddingBottom="30dp"
+                android:paddingLeft="30dp"
+                android:id="@+id/login_text"
+                android:textColor="#020202"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/create_account_layout"
+                android:fontFamily="@font/lato_italic"
+                android:text="Already a member? Click here to"
+                android:textSize="15dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:paddingBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_below="@id/create_account_layout"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/login_text"
+                android:text="Login"
+                android:id="@+id/login_btn"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

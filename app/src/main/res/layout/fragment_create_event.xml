@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".CreateEventFragment"
+    android:layout_centerInParent="true"
+    android:screenOrientation="portrait">
+
+    <ScrollView
+        android:id="@+id/scroll_view_create_event"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <RelativeLayout
+            android:id="@+id/create_event_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp"
+            android:paddingBottom="10dp"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Event"
+                android:fontFamily="@font/lato_italic"
+                android:textSize="45dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="italic"
+                android:textColor="#000000"
+                android:id="@+id/create_event_heading"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:layout_below="@id/create_event_heading"
+                android:id="@+id/event_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_italic"
+                android:text="Event Name"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/event_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/event_name_text"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_fields"
+                android:fontFamily="@font/lato_italic" />
+
+            <TextView
+                android:id="@+id/event_type_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_name"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_italic"
+                android:text="Event Type"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/event_type"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/event_type_text"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_fields"
+                android:fontFamily="@font/lato_italic"
+                android:hint="eg: wedding, party etc" />
+
+
+            <TextView
+                android:id="@+id/event_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_type"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_italic"
+                android:text="Event Date"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/event_date"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/event_date_text"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_fields"
+                android:fontFamily="@font/lato_italic"
+                android:inputType="date"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:hint="" />
+
+            <TextView
+                android:id="@+id/event_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_date"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_italic"
+                android:text="Event Time"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/event_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/event_time_text"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_fields"
+                android:fontFamily="@font/lato_italic"
+                android:hint=""
+                android:inputType="time"
+                android:focusableInTouchMode="false"
+                android:focusable="false"/>
+
+            <TextView
+                android:id="@+id/event_peoples_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_time"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_italic"
+                android:text="Number of people coming?"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/event_peoples"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/event_peoples_text"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_fields"
+                android:fontFamily="@font/lato_italic"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/event_food_made_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_peoples"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_italic"
+                android:text="How much food is prepared? (eg: 40 for 40 peoples)."
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/event_food_made"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/event_food_made_text"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_fields"
+                android:fontFamily="@font/lato_italic"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/event_address_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_food_made"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_italic"
+                android:text="Address"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/event_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/event_address_text"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_fields"
+                android:fontFamily="@font/lato_italic"
+                android:hint=""
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/event_address_lat_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_address"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_italic"
+                android:text="Latitude of the location"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/event_address_lat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/event_address_lat_text"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_fields"
+                android:fontFamily="@font/lato_italic"
+                android:hint="eg: 11.541"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/event_address_lon_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_address_lat"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_italic"
+                android:text="Longitude of the location"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/event_address_lon"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/event_address_lon_text"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_fields"
+                android:fontFamily="@font/lato_italic"
+                android:hint="eg: 11.548"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/event_dress_code_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_address_lon"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_italic"
+                android:text="Dress Code"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/event_dress_code"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/event_dress_code_text"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_fields"
+                android:fontFamily="@font/lato_italic"
+                android:hint="eg: formal"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Menu"
+                android:textSize="30dp"
+                android:fontFamily="@font/lato_italic"
+                android:textStyle="italic"
+                android:textColor="#000000"
+                android:id="@+id/ui_menu"
+                android:layout_below="@id/event_dress_code"
+                android:layout_marginTop="15dp"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continental"
+                android:fontFamily="@font/lato_italic"
+                android:textSize="16dp"
+                android:id="@+id/continental_check"
+                android:layout_below="@id/ui_menu"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chinese"
+                android:fontFamily="@font/lato_italic"
+                android:textSize="16dp"
+                android:id="@+id/chinese_check"
+                android:layout_below="@id/continental_check"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Local"
+                android:fontFamily="@font/lato_italic"
+                android:textSize="16dp"
+                android:id="@+id/local_check"
+                android:layout_below="@id/chinese_check"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desi"
+                android:fontFamily="@font/lato_italic"
+                android:textSize="16dp"
+                android:id="@+id/desi_check"
+                android:layout_below="@id/local_check"/>
+
+
+            <Button
+                android:id="@+id/create_event_btn"
+                android:layout_width="1in"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desi_check"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_corners"
+                android:fontFamily="@font/lato_italic"
+                android:text="Create Event" />
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

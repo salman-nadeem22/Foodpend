@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "398251732131",
+    "firebase_url": "https://food-wastage-managment-system.firebaseio.com",
+    "project_id": "food-wastage-managment-system",
+    "storage_bucket": "food-wastage-managment-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398251732131:android:6769464b2855ed41776316",
+        "android_client_info": {
+          "package_name": "com.example.foodwastagemanagmentsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398251732131-iuot6e0gc0orjd04e256ogcti9cf9mcj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.foodwastagemanagmentsystem",
+            "certificate_hash": "463938553b21b17d6395f3dbf41b5e4dcfab1e9f"
+          }
+        },
+        {
+          "client_id": "398251732131-akth9liedup6gt7ivs06m8qtgtiipl1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-HKxR0KzHNOd9ssTxZMoOuOHUV2iXt3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398251732131-akth9liedup6gt7ivs06m8qtgtiipl1q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

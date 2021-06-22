@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".ui.slideshow.SlideshowFragment"
+    android:background="#fff"
+    android:screenOrientation="portrait">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp">
+
+        <ImageView
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/p1"
+            android:scaleType="fitXY"
+            android:id="@+id/uf_profile_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uf_profile_image"
+            android:id="@+id/uf_name"
+            android:text="Please Wait...."
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/lato_italic"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uf_name"
+            android:id="@+id/uf_country"
+            android:text="Fetching Data...."
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/lato_italic"
+            android:textSize="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uf_country"
+            android:layout_marginTop="60dp"
+            android:padding="25dp"
+            android:background="@drawable/rounded_corners_2">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ui_mobile_icon"
+                android:src="@drawable/ic_baseline_local_phone_24"
+                android:layout_marginRight="40dp"/>
+
+            <TextView
+                android:layout_toRightOf="@id/ui_mobile_icon"
+                android:layout_width="wrap_content"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:id="@+id/ui_mobile"
+                android:fontFamily="@font/lato_italic"
+                android:textSize="15dp"
+                android:text="Mobile"/>
+            <TextView
+                android:layout_toRightOf="@id/ui_mobile_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/uf_phone"
+                android:layout_below="@id/ui_mobile"
+                android:fontFamily="@font/lato_italic"
+                android:textSize="20dp"
+                android:textColor="#000000"
+
+                android:text="Please Wait....."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/uf_phone"
+                android:id="@+id/ui_b"
+                android:layout_marginBottom="15dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/ui_Email_icon"
+                android:layout_below="@id/ui_b"
+                android:src="@drawable/ic_baseline_email_24"
+                android:layout_marginRight="40dp"/>
+            <TextView
+                android:layout_toRightOf="@id/ui_Email_icon"
+                android:layout_width="wrap_content"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:id="@+id/ui_email"
+                android:layout_below="@id/ui_b"
+                android:fontFamily="@font/lato_italic"
+                android:textSize="15dp"
+                android:text="Email"/>
+            <TextView
+                android:layout_toRightOf="@id/ui_Email_icon"
+                android:layout_width="wrap_content"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                android:id="@+id/uf_email"
+                android:layout_below="@id/ui_email"
+                android:fontFamily="@font/lato_italic"
+                android:textSize="20dp"
+                android:text="Please Wait....."/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="a1">User can create events and tell in the app about the event then we can take the food after the event finish.</string>
+    <string name="a2">You can find latitude and longitude of the event location in the google maps.</string>
+    <string name="a3">We give the food to the charity or give them to homeless peoples.</string>
+</resources>

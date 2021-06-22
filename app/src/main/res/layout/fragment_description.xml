@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Description"
+    android:background="#fff"
+    android:screenOrientation="portrait">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.mapbox.mapboxsdk.maps.MapView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/desc_map"
+                app:mapbox_cameraTargetLat="16"
+                app:mapbox_cameraTargetLng="108"
+                app:mapbox_cameraZoom="11"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/desc_map"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Please Wait...."
+                    android:id="@+id/desc_event_name"
+                    android:fontFamily="@font/lato_italic"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Fetching Data...."
+                    android:id="@+id/desc_event_type"
+                    android:layout_below="@id/desc_event_name"
+                    android:fontFamily="@font/lato_italic"
+                    android:layout_marginTop="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:background="@drawable/rounded_corners_2"
+                    android:layout_below="@id/desc_event_type"
+                    android:id="@+id/first_desc_div"
+                    android:layout_marginTop="30dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/ui_peoples_icon"
+                        android:src="@drawable/ic_baseline_group_24"
+                        android:layout_marginRight="40dp"/>
+
+                    <TextView
+                        android:layout_toRightOf="@id/ui_peoples_icon"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ui_desc_people"
+                        android:fontFamily="@font/lato_italic"
+                        android:textSize="14dp"
+                        android:text="Peoples Coming"/>
+
+                    <TextView
+                        android:layout_toRightOf="@id/ui_peoples_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/desc_people"
+                        android:layout_below="@id/ui_desc_people"
+                        android:fontFamily="@font/lato_italic"
+                        android:textSize="19dp"
+                        android:textColor="#000000"
+                        android:text="Please Wait....."/>
+
+                    <TextView
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/desc_event_time"
+                        android:fontFamily="@font/lato_italic"
+                        android:textSize="14dp"
+                        android:text="Please Wait"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/desc_event_date"
+                        android:layout_below="@id/desc_event_time"
+                        android:fontFamily="@font/lato_italic"
+                        android:textSize="16dp"
+                        android:textColor="#000000"
+                        android:text="Please Wait"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/desc_people"
+                        android:id="@+id/ui_b"
+                        android:layout_marginBottom="5dp"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/ui_location_icon"
+                        android:layout_below="@id/ui_b"
+                        android:src="@drawable/ic_baseline_location_on_24"
+                        android:layout_marginRight="40dp"/>
+                    <TextView
+                        android:layout_toRightOf="@id/ui_location_icon"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ui_desc_text"
+                        android:layout_below="@id/ui_b"
+                        android:fontFamily="@font/lato_italic"
+                        android:textSize="14dp"
+                        android:text="Address"/>
+                    <TextView
+                        android:layout_toRightOf="@id/ui_location_icon"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/desc_address"
+                        android:layout_below="@id/ui_desc_text"
+                        android:fontFamily="@font/lato_italic"
+                        android:textSize="17dp"
+                        android:text="Please Wait....."/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:background="@drawable/rounded_corners_2"
+                    android:layout_below="@id/first_desc_div"
+                    android:layout_marginTop="30dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/ui_food_made"
+                        android:src="@drawable/ic_baseline_fastfood_24"
+                        android:layout_marginRight="40dp"/>
+
+                    <TextView
+                        android:layout_toRightOf="@id/ui_food_made"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ui_food_made_text"
+                        android:fontFamily="@font/lato_italic"
+                        android:textSize="14dp"
+                        android:text="Total Food Made for Peoples."/>
+
+                    <TextView
+                        android:layout_toRightOf="@id/ui_food_made"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/desc_food_made"
+                        android:layout_below="@id/ui_food_made_text"
+                        android:fontFamily="@font/lato_italic"
+                        android:textSize="19dp"
+                        android:textColor="#000000"
+                        android:text="Please Wait....."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/desc_food_made"
+                        android:id="@+id/ui_c"
+                        android:layout_marginBottom="5dp"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/ui_dress_icon"
+                        android:layout_below="@id/ui_c"
+                        android:src="@drawable/ic_baseline_accessibility_new_24"
+                        android:layout_marginRight="40dp"/>
+                    <TextView
+                        android:layout_toRightOf="@id/ui_dress_icon"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ui_desc_dress_text"
+                        android:layout_below="@id/ui_c"
+                        android:fontFamily="@font/lato_italic"
+                        android:textSize="14dp"
+                        android:text="Dress Code"/>
+                    <TextView
+                        android:layout_toRightOf="@id/ui_dress_icon"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/desc_dress_code"
+                        android:layout_below="@id/ui_desc_dress_text"
+                        android:fontFamily="@font/lato_italic"
+                        android:textSize="17dp"
+                        android:text="Please Wait....."/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/ui_recycle_icon"
+                        android:layout_below="@id/desc_dress_code"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/ic_baseline_flip_camera_android_24"
+                        android:layout_marginRight="40dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ui_food_saved"
+                        android:layout_toRightOf="@id/ui_dress_icon"
+                        android:layout_below="@+id/desc_dress_code"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/lato_italic"
+                        android:textSize="14dp"
+                        android:text="The amount of food for people can be saved."/>
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_toRightOf="@id/ui_dress_icon"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/desc_food_saved"
+                        android:layout_below="@id/ui_food_saved"
+                        android:fontFamily="@font/lato_italic"
+                        android:textSize="19dp"
+                        android:textColor="#000000"
+                        android:text="Please Wait....."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Menu"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/lato_italic"
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:layout_below="@id/desc_food_saved"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/ui_menu_text"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ui_menu_text"
+                        android:text="Please Wait..."
+                        android:textColor="#000000"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/lato_italic"
+                        android:layout_marginTop="10dp"
+                        android:textSize="19dp"
+                        android:id="@+id/continental_text"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ui_menu_text"
+                        android:layout_toRightOf="@id/continental_text"
+                        android:fontFamily="@font/lato_italic"
+                        android:layout_marginTop="10dp"
+                        android:textSize="19dp"
+                        android:id="@+id/chinese_text"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:layout_below="@+id/ui_menu_text"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/chinese_text"
+                        android:fontFamily="@font/lato_italic"
+                        android:layout_marginTop="10dp"
+                        android:textSize="19dp"
+                        android:id="@+id/local_text"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ui_menu_text"
+                        android:textColor="#000000"
+                        android:layout_toRightOf="@id/local_text"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/lato_italic"
+                        android:layout_marginTop="10dp"
+                        android:textSize="19dp"
+                        android:id="@+id/desi_text"/>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

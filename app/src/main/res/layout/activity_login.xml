@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorVeryLight"
+    tools:context=".LoginActivity"
+    android:screenOrientation="portrait">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/loginscreen"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="foodpend"
+        android:textAlignment="center"
+        android:fontFamily="@font/lato_italic"
+        android:gravity="center"
+        android:layout_above="@id/login_layout"
+        android:textColor="#000000"
+        android:textSize="50dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/login_layout"
+        android:padding="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/username_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_italic"
+            android:text="Email"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/user_email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/input_fields"
+            android:fontFamily="@font/lato_italic"
+            android:hint="someone@example.com"
+            android:layout_below="@id/username_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="20dp"
+            android:fontFamily="@font/lato_italic"
+            android:id="@+id/password_text"
+            android:layout_below="@id/user_email"/>
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input_fields"
+            android:id="@+id/user_password"
+            android:inputType="textPassword"
+            android:layout_below="@id/password_text"
+            android:fontFamily="@font/lato_italic"
+            android:hint="******"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="1in"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_password"
+            android:layout_alignParentLeft="true"
+            android:textColor="#000000"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="@font/lato_italic"
+            android:text="Login"
+            android:id="@+id/login_btn"
+            />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/register_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:fontFamily="@font/lato_italic"
+        android:text="Not a member? Click here to"
+        android:textSize="15dp"
+        android:layout_marginRight="5dp"
+        android:textColor="#020202"
+        android:paddingBottom="30dp"
+        android:paddingLeft="30dp" />
+
+    <TextView
+        android:id="@+id/register_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lato_italic"
+        android:textColor="#fff"
+        android:text="Register"
+        android:layout_toRightOf="@id/register_Text"
+        android:textSize="15dp"
+        android:layout_marginRight="5dp"
+        android:paddingBottom="30dp" />
+
+</RelativeLayout>
